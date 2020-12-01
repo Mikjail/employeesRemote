@@ -1,6 +1,6 @@
 import { FETCH_EMPLOYEES } from '../actions/actionTypes';
 
-const initialState = [
+export const initialState = [
   {
     id: 1,
     name: 'Kermie',

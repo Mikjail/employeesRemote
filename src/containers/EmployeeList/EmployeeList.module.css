@@ -1,0 +1,25 @@
+.content {
+  display: grid;
+  grid-template-rows: 77px 1fr;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 41px;
+}
+
+.headline {
+  display: flex;
+  align-items: flex-end;
+}
+
+.headline h2 {
+  margin: 0 8px 0 0;
+}
+
+.headline small {
+  color: var(--font-light);
+  font-size: 13px;
+  padding-bottom: 2px;
+}
