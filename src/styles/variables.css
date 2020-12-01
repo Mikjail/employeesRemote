@@ -1,9 +1,12 @@
 :root {
   --white: #ffffff;
 
+  --primary-background: #f4f7fc;
+
   --primary-color: #624de3;
   --secondary-color: #624de34d;
 
+  --font-white: var(--white);
   --font-dark: #00234b;
   --font-light: #778ca3;
 }

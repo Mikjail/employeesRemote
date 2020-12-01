@@ -1,8 +1,15 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
   padding: 20px 111px;
-  background-color: var(--white);
+  width: 100%;
+  max-width: 1280px;
 }
 
 .profileImg {
@@ -19,5 +26,11 @@
 }
 
 .userRole {
+  font-size: 13px;
   color: var(--font-light);
+}
+
+.userName {
+  font-size: 16px;
+  color: var(--font-dark);
 }
