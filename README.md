@@ -16,4 +16,4 @@
 
 ### Styles
 
-- [ ] Add Theming
+- [x] Add Css Variables

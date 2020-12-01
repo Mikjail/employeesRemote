@@ -1,23 +1,23 @@
-.nav-bar {
+.nav {
   display: flex;
   justify-content: flex-end;
   padding: 20px 111px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
-.nav-bar__profile-img {
+.profileImg {
   width: 36px;
   height: 36px;
   border-radius: 50px;
   background-color: #ffe8df;
 }
 
-.nav-bar__profile-detail {
+.profileDetails {
   display: flex;
   flex-direction: column;
   margin-left: 13px;
 }
 
-.nav-bar__profile-detail small {
-  color: #778ca3;
+.userRole {
+  color: var(--font-light);
 }

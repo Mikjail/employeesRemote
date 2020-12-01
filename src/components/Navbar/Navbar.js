@@ -1,12 +1,12 @@
 import React from 'react';
-import './Navbar.css';
+import style from './Navbar.module.css';
 
 const navBar = () => (
-  <nav className="nav-bar" data-testid="navbar">
-    <div className="nav-bar__profile-img" data-testid="profile-image" />
-    <div className="nav-bar__profile-detail" data-testid="profile-details">
+  <nav className={style.nav} data-testid="navbar">
+    <div className={style.profileImg} data-testid="profile-image" />
+    <div className={style.profileDetails} data-testid="profile-details">
       <span> Julie Howard </span>
-      <small> Admin </small>
+      <small className={style.userRole}> Admin </small>
     </div>
   </nav>
 );
