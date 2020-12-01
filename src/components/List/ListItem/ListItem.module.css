@@ -1,0 +1,52 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #ffffff;
+  box-shadow: 6px 6px 54px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 32px 26px;
+  margin-top: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name span:first-child {
+  font-weight: 600;
+}
+
+.name span:nth-child(2) {
+  font-size: 14px;
+  color: var(--font-light);
+}
+.country,
+.jobTitle,
+.salary {
+  font-size: 16px;
+  color: var(--font-gray);
+}
+
+.salary span:nth-child(2) {
+  margin-left: 4px;
+}
+
+.salary small {
+  font-size: 13px;
+  margin-left: 4px;
+  color: var(--font-light);
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.country,
+.jobTitle,
+.salary {
+  display: flex;
+  align-items: center;
+}

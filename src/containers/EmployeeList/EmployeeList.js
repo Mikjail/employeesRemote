@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../store/actions';
 import style from './EmployeeList.module.css';
 import commonStyle from '../../styles/common.module.css';
+import List from '../../components/List/List';
 
 const employeeList = (props) => {
   const { onFetchEmployees, employees } = props;
@@ -31,8 +32,11 @@ const employeeList = (props) => {
           </small>
         </div>
         <button type="button" className={commonStyle.primaryBtn} onClick={addEmployee} data-testid="add-btn">
-          Add Employee
+          Add employee
         </button>
+      </div>
+      <div className={style.list}>
+        <List items={employees} />
       </div>
     </div>
   );

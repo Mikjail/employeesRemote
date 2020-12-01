@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-template-rows: 77px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .header {
@@ -22,4 +22,8 @@
   color: var(--font-light);
   font-size: 13px;
   padding-bottom: 2px;
+}
+
+.list {
+  margin-top: 56px;
 }

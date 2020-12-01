@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 26px;
+}
+
+.body {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.thead {
+  font-size: 12px;
+  color: var(--font-light);
+}

@@ -9,16 +9,12 @@ beforeEach(() => {
 
 test('Renders EmployeeList component', () => {
   const mainView = screen.getByTestId('employees-list');
-
-  expect(mainView).toBeInTheDocument();
-
   const headline = screen.getByTestId('headline');
-
-  expect(headline).toBeInTheDocument();
-
   const addBtn = screen.getByTestId('add-btn');
 
-  expect(addBtn).toHaveTextContent('Add Employee');
+  expect(mainView).toBeInTheDocument();
+  expect(headline).toBeInTheDocument();
+  expect(addBtn).toHaveTextContent('Add employee');
 });
 
 test('Checking employees counter', () => {

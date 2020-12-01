@@ -3,22 +3,25 @@ import { FETCH_EMPLOYEES } from '../actions/actionTypes';
 export const initialState = [
   {
     id: 1,
-    name: 'Kermie',
-    day_of_birth: '4/9/1999',
+    name: 'Kermie Hills',
+    jobTitle: 'Manager',
+    dayOfBirth: '4/9/1999',
     country: 'Philippines',
     salary: 1648.51
   },
   {
     id: 2,
-    name: 'Ealasaid',
-    day_of_birth: '1/30/1973',
+    name: 'Ealasaid Doe',
+    jobTitle: 'QA',
+    dayOfBirth: '1/30/1973',
     country: 'Sweden',
     salary: 875.32
   },
   {
     id: 3,
-    name: 'Chrystel',
-    day_of_birth: '1/27/1979',
+    name: 'Chrystel Kornel',
+    jobTitle: 'Software Engineer',
+    dayOfBirth: '1/27/1979',
     country: 'Indonesia',
     salary: 1424.75
   }
