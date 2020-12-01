@@ -5,10 +5,8 @@ test('Renders Layout component', () => {
   render(<Layout />);
 
   const mainView = screen.getByTestId('main');
-
-  expect(mainView).toBeInTheDocument();
-
   const navBar = screen.getByTestId('navbar');
 
+  expect(mainView).toBeInTheDocument();
   expect(navBar).toBeInTheDocument();
 });
