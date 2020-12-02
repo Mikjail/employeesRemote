@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'react/jsx-props-no-spreading': 'off'
   }
 };

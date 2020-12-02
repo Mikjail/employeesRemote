@@ -1,11 +1,11 @@
-import { FETCH_EMPLOYEES } from '../actions/actionTypes';
+import { CREATE_EMPLOYEE, FETCH_EMPLOYEES, EDIT_EMPLOYEE } from '../actions/actionTypes';
 
 export const initialState = [
   {
     id: 1,
     name: 'Kermie Hills',
     jobTitle: 'Manager',
-    dayOfBirth: '4/9/1999',
+    dateOfBirth: '4/9/1999',
     country: 'Philippines',
     salary: 1648.51
   },
@@ -13,7 +13,7 @@ export const initialState = [
     id: 2,
     name: 'Ealasaid Doe',
     jobTitle: 'QA',
-    dayOfBirth: '1/30/1973',
+    dateOfBirth: '1/30/1973',
     country: 'Sweden',
     salary: 875.32
   },
@@ -21,7 +21,7 @@ export const initialState = [
     id: 3,
     name: 'Chrystel Kornel',
     jobTitle: 'Software Engineer',
-    dayOfBirth: '1/27/1979',
+    dateOfBirth: '1/27/1979',
     country: 'Indonesia',
     salary: 1424.75
   }
@@ -29,10 +29,22 @@ export const initialState = [
 
 const fetchEmployees = (state) => state.slice();
 
+const addEmployee = (state, action) => ([...state, action.payload]);
+
+const editEmployee = (state, action) => {
+  const indexEmployee = state.findIndex((empl) => (empl.id === action.payload.id));
+  state.splice(indexEmployee, 1);
+  return [...state, action.payload];
+};
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_EMPLOYEES:
       return fetchEmployees(state);
+    case CREATE_EMPLOYEE:
+      return addEmployee(state, action);
+    case EDIT_EMPLOYEE:
+      return editEmployee(state, action);
     default:
       return state;
   }

@@ -1,0 +1,29 @@
+.main {
+  background-color: var(--white);
+  padding: 34px 0px;
+  box-shadow: 6px 6px 54px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.formFooter button:nth-child(2) {
+  margin-left: 16px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.input {
+  margin-bottom: 30px;
+}

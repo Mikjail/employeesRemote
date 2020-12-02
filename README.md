@@ -9,20 +9,19 @@
 
 ### Containers
 
-- [] EmployeesForm
+- [x] Employees Create (Edit/Create)
 - [x] EmployeesList
 
 ### Components:
 
-- [ ] Input Component
-- [x] Layout Component
-- [x] NavBar Component
-- [x] List Component
-      | - [x] ListItem Component
-
-### Shared Components (UI folder)
-
-- [x] Button component
+- [x] Input
+- [x] Layout
+- [x] NavBar
+- [x] List
+  - [x] ListItem
+- [x] Headline
+- [x] Button
+- [x] NoContent
 
 ### Styles
 
