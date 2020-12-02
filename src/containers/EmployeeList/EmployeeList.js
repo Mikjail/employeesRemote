@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import * as actions from '../../store/actions';
 import style from './EmployeeList.module.css';
 import commonStyle from '../../styles/common.module.css';
@@ -11,10 +12,6 @@ const employeeList = (props) => {
   useEffect(() => {
     onFetchEmployees();
   }, [onFetchEmployees]);
-
-  const addEmployee = () => {
-    console.log('add employee clicked');
-  };
 
   return (
     <div className={style.content} data-testid="employees-list">
@@ -31,9 +28,13 @@ const employeeList = (props) => {
             employees
           </small>
         </div>
-        <button type="button" className={commonStyle.primaryBtn} onClick={addEmployee} data-testid="add-btn">
+        <Link
+          to="/create"
+          className={[commonStyle.primaryBtn, style.addBtn].join(' ')}
+          data-testid="add-btn"
+        >
           Add employee
-        </button>
+        </Link>
       </div>
       <div className={style.list}>
         <List items={employees} />

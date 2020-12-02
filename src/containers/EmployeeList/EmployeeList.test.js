@@ -1,10 +1,17 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import EmployeeList from './EmployeeList';
 import { render, screen } from '../../utils/test.utils';
 import { initialState } from '../../store/reducers/employees';
 
 beforeEach(() => {
   // Setup compoonent
-  render(<EmployeeList />, { initialState: { employees: [...initialState] } });
+  render(
+    <BrowserRouter>
+      <EmployeeList />
+    </BrowserRouter>,
+    { initialState: { employees: [...initialState] } }
+  );
 });
 
 test('Renders EmployeeList component', () => {
