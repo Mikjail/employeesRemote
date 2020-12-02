@@ -7,12 +7,22 @@
 
 ## App
 
+### Containers
+
+- [] EmployeesForm
+- [x] EmployeesList
+
 ### Components:
 
-- [ ] Table Component
 - [ ] Input Component
 - [x] Layout Component
 - [x] NavBar Component
+- [x] List Component
+      | - [x] ListItem Component
+
+### Shared Components (UI folder)
+
+- [x] Button component
 
 ### Styles
 
