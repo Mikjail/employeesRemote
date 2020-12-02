@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './ListItem.module.css';
-import commonStyle from '../../../styles/common.module.css';
+import Button from '../../UI/Button/Button';
 
 const listItem = ({ item }) => {
   const onEdit = (itemId) => {
@@ -29,9 +29,9 @@ const listItem = ({ item }) => {
         <small>per year</small>
       </div>
       <div className={style.action} data-testid="action">
-        <button type="button" onClick={() => onEdit(item.id)} className={commonStyle.secondaryBtn}>
+        <Button btnType="secondaryBtn" clicked={() => onEdit(item.id)}>
           Edit
-        </button>
+        </Button>
       </div>
     </div>
   );
