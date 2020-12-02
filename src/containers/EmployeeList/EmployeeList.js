@@ -33,6 +33,7 @@ const employeeList = (props) => {
           className={[commonStyle.primaryBtn, style.addBtn].join(' ')}
           data-testid="add-btn"
         >
+          <i className={style.icon} />
           Add employee
         </Link>
       </div>

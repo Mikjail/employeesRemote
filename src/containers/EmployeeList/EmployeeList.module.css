@@ -30,3 +30,11 @@
 .addBtn {
   padding: 13px 23px !important;
 }
+
+.icon {
+  background: url('/src/assets/personIcon.svg');
+  color: var(--white);
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}

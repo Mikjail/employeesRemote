@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
+import moment from 'moment';
+import * as actions from '../../store/actions';
 import Input from '../../components/UI/Input/Input';
 import Headline from '../../components/Headline/Headline';
 import style from './EmployeeCreate.module.css';
 import Button from '../../components/UI/Button/Button';
-import * as actions from '../../store/actions';
-import { checkValidity, updateObject } from '../../utils/utils';
-import { formObject } from './formObject';
-import Aux from '../../hoc/Aux/aux';
 import NoContent from '../../components/NoContent/NoContent';
+import Aux from '../../hoc/Aux/aux';
+import { formObject } from './formObject';
+import { checkValidity, updateObject, setInputValue } from '../../utils/utils';
 
 const employeeCreate = (props) => {
   const {
@@ -43,8 +44,9 @@ const employeeCreate = (props) => {
       const employeeToSet = employees.find((empl) => empl.id.toString() === params.id.toString());
       if (employeeToSet && employeeToSet.id) {
         Object.keys(employeeForm).forEach((key) => {
+          const inputValue = employeeToSet[key] || employeeForm[key].value;
           const updatedFormElement = updateObject(employeeForm[key], {
-            value: employeeToSet[key] || employeeForm[key].value,
+            value: setInputValue(employeeForm[key].elementConfig.type, inputValue),
             valid: checkValidity(
               employeeToSet[key],
               employeeForm[key].validation
@@ -133,6 +135,11 @@ const employeeCreate = (props) => {
     Object.keys(employeeForm).forEach((key) => {
       formData[key] = employeeForm[key].value;
     });
+
+    formData.salary = parseInt(formData.salary, 10);
+
+    formData.dateOfBirth = moment(formData.dateOfBirth, 'YYYY-MM-DD').format('MM/DD/YYYY');
+
     if (employee) {
       formData.id = employee.id;
       onEditEmployee(formData);

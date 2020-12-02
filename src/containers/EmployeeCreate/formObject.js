@@ -20,8 +20,8 @@ export const formObject = {
     label: 'Birthdate',
     elementType: 'input',
     elementConfig: {
-      type: 'text',
-      placeholder: 'e.g. 17/02/1990'
+      type: 'date',
+      placeholder: 'e.g. 02/17/1990'
     },
     value: '',
     validation: {
@@ -29,7 +29,7 @@ export const formObject = {
     },
     valid: false,
     touched: false,
-    hint: 'DD/MM/YYYY'
+    hint: 'MM/DD//YYYY'
   },
   jobTitle: {
     label: 'Job Title',
