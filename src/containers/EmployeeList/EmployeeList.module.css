@@ -6,7 +6,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 41px;
 }
 
 .headline {
@@ -26,4 +25,8 @@
 
 .list {
   margin-top: 56px;
+}
+
+.addBtn {
+  padding: 13px 23px !important;
 }
