@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/react';
 import Button from './Button';
 
 describe('Testing Button component', () => {
-  test('Renders Button without properties ', () => {
+  it('Should render the Button without props', () => {
     const { getByTestId } = render(<Button />);
 
     const btnElement = getByTestId('btn');
@@ -11,10 +11,10 @@ describe('Testing Button component', () => {
     expect(btnElement).toBeEnabled();
   });
 
-  test('Renders Button with props (disabled = true)', () => {
+  test('Should render the Button with props (disabled = true)', () => {
     const props = {
       disabled: true,
-      btnType: 'primaryBtn',
+      classType: 'primaryBtn',
       clicked: jest.fn()
     };
     const { getByTestId } = render(<Button {...props} />);
@@ -23,7 +23,7 @@ describe('Testing Button component', () => {
     fireEvent.click(getByTestId('btn'));
 
     expect(btnElement).toBeDisabled();
-    expect(btnElement).toHaveClass(props.btnType);
+    expect(btnElement).toHaveClass(props.classType);
     expect(props.clicked).toHaveBeenCalledTimes(0); // because it is disabled
   });
 
