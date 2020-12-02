@@ -1,3 +1,5 @@
+# Demo: https://mikjail.github.io/employeesDemo/
+
 # Getting Starter
 
 ### Run App:
@@ -7,8 +9,6 @@
 ```
 npm run start
 ```
-
-- You can visit the github page: https://mikjail.github.io/employeesDemo/
 
 ### Run Unit Tests and check coverage:
 
