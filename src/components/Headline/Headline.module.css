@@ -1,0 +1,23 @@
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 36px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 14px;
+  color: var(--font-gray);
+  margin-bottom: 32px;
+}
+
+.title,
+.subtitle {
+  padding: 0 36px;
+}
+
+hr {
+  border: 1px solid #eaedf3;
+}
