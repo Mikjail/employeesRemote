@@ -1,30 +1,23 @@
 import React from 'react';
 import './styles/variables.css';
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { Switch, Route } from 'react-router-dom';
 import Layout from './hoc/Layout/layout';
-import reducers from './store/reducers';
 import EmployeeList from './containers/EmployeeList/EmployeeList';
-
-const store = createStore(reducers);
+import EmployeeForm from './containers/EmployeeForm/EmployeeForm';
 
 const App = () => {
   const routes = (
     <Switch>
       <Route path="/" exact component={EmployeeList} />
+      <Route path="/create" exact component={EmployeeForm} />
     </Switch>
   );
 
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Layout>
-          {routes}
-        </Layout>
-      </BrowserRouter>
-    </Provider>
+    <Layout>
+      {routes}
+    </Layout>
   );
 };
 
