@@ -38,3 +38,15 @@
   height: 15px;
   margin-right: 8px;
 }
+
+/**
+  View from max-width 800px 
+**/
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+  }
+  .header a {
+    margin-top: 16px;
+  }
+}

@@ -180,11 +180,15 @@ const employeeCreate = (props) => {
       ))}
       <div className={style.formFooter}>
         <Button classType="secondaryBtn" clicked={onCancel}>
-          Cancel
+          <span data-testid="cancel-btn">
+            Cancel
+          </span>
         </Button>
 
         <Button classType="primaryBtn" btnType="submit">
-          {params.id ? 'Save' : 'Add Employee'}
+          <span data-testid="save-btn">
+            {params.id ? 'Save' : 'Add Employee'}
+          </span>
         </Button>
       </div>
     </form>
@@ -210,7 +214,7 @@ const employeeCreate = (props) => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   onCreateEmployee: (employee) => dispatch(actions.createEmployees(employee)),
   onFetchEmployees: () => dispatch(actions.fetchEmployees()),
   onEditEmployee: (employee) => dispatch(actions.editEmployee(employee))

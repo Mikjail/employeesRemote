@@ -8,6 +8,10 @@
   margin-top: 10px;
 }
 
+.mobileTitle {
+  display: none;
+}
+
 .name {
   display: flex;
   flex-direction: column;
@@ -42,6 +46,7 @@
 .action {
   display: flex;
   justify-content: flex-end;
+  height: 43px;
 }
 
 .country,
@@ -56,4 +61,30 @@
   text-decoration: none;
   width: 90px;
   min-width: 50px;
+}
+
+/**
+  View from max-width 800px 
+**/
+@media (max-width: 800px) {
+  .row {
+    grid-template-rows: 1fr 1fr 1fr 1fr 43px;
+    grid-template-columns: unset;
+    row-gap: 8px;
+  }
+  .column {
+    height: auto;
+  }
+  .action {
+    display: flex;
+    justify-content: center;
+  }
+  .mobileTitle {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .name span:first-child {
+    font-weight: 500;
+    color: var(--font-gray);
+  }
 }

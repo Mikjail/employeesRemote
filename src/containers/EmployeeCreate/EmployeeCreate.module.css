@@ -27,3 +27,12 @@
 .input {
   margin-bottom: 30px;
 }
+
+/**
+  View from max-width 800px 
+**/
+@media (max-width: 800px) {
+  .input {
+    padding: 0 27px;
+  }
+}

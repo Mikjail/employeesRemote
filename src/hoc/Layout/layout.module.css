@@ -3,3 +3,13 @@
   max-width: 1280px;
   margin: auto;
 }
+/**
+  View 600px max-width
+**/
+@media (max-width: 600px) {
+  .main {
+    padding: 40px 0;
+    max-width: 1280px;
+    margin: auto;
+  }
+}

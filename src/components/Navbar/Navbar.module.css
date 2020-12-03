@@ -34,3 +34,18 @@ nav {
   font-size: 16px;
   color: var(--font-dark);
 }
+
+/**
+  View from max-width 800px 
+**/
+@media (max-width: 800px) {
+  .nav {
+    padding: 20px 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 20px 10px;
+  }
+}

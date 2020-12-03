@@ -5,24 +5,44 @@ import commonStyle from '../../../styles/common.module.css';
 
 const listItem = ({ item }) => (
   <div className={style.row}>
-    <div className={style.name} data-testid="name">
-      <span>
-        {item.name}
-      </span>
-      <span data-testid="dateOfBirth">
-        {item.dateOfBirth}
-      </span>
+    <div className={style.column}>
+      <div className={style.mobileTitle}>
+        Name
+      </div>
+      <div className={style.name} data-testid="name">
+        <span>
+          {item.name}
+        </span>
+        <span data-testid="dateOfBirth">
+          {item.dateOfBirth}
+        </span>
+      </div>
     </div>
-    <div className={style.jobTitle} data-testid="jobTitle">
-      {item.jobTitle}
+    <div className={style.column}>
+      <div className={style.mobileTitle}>
+        Job Title
+      </div>
+      <div className={style.jobTitle} data-testid="jobTitle">
+        {item.jobTitle}
+      </div>
     </div>
-    <div className={style.country} data-testid="country">
-      {item.country}
+    <div className={style.column}>
+      <div className={style.mobileTitle}>
+        Country
+      </div>
+      <div className={style.country} data-testid="country">
+        {item.country}
+      </div>
     </div>
-    <div className={style.salary} data-testid="salary">
-      <span>{item.salary.toLocaleString()}</span>
-      <span>USD</span>
-      <small>per year</small>
+    <div className={style.column}>
+      <div className={style.mobileTitle}>
+        Salary
+      </div>
+      <div className={style.salary} data-testid="salary">
+        <span>{item.salary.toLocaleString()}</span>
+        <span>USD</span>
+        <small>per year</small>
+      </div>
     </div>
     <div className={style.action} data-testid="action">
       <Link

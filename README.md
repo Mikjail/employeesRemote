@@ -38,7 +38,7 @@ npm run test -- --coverage --watchAll
 
 ### Styles:
 
-- I used Css Modules which come incorporated with react v17
+- There is a wide aproach to add css in React (css components, css modules, plain css with naming conventions like BEM...), but to keep it simple I used Css Modules which come incorporated with react v17
 - I used css variables to set the theme according to the wireframes.
 - I created 1 common style to reuse styles on primary/secondary btns.
 
@@ -73,3 +73,4 @@ As an improvement I would:
 
 - Use a type checker to avoid runtime errors (propType, Typescript or Flow).
 - Add E2E testing (cypress).
+- I would improve the css to file by changing them to a preprocessor (sass or less) to make the nesting styles more readable, or even include some reusable blocks of styles.
