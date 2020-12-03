@@ -13,7 +13,7 @@ const store = createStore(reducers);
 
 const app = (
   <Provider store={store}>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <App />
     </HashRouter>
   </Provider>
