@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/employeesDemo/static/css/main.63492ae4.chunk.css",
-    "main.js": "/employeesDemo/static/js/main.b644e8dd.chunk.js",
-    "main.js.map": "/employeesDemo/static/js/main.b644e8dd.chunk.js.map",
-    "runtime-main.js": "/employeesDemo/static/js/runtime-main.bc493fbb.js",
-    "runtime-main.js.map": "/employeesDemo/static/js/runtime-main.bc493fbb.js.map",
-    "static/js/2.93525698.chunk.js": "/employeesDemo/static/js/2.93525698.chunk.js",
-    "static/js/2.93525698.chunk.js.map": "/employeesDemo/static/js/2.93525698.chunk.js.map",
-    "static/js/3.853510aa.chunk.js": "/employeesDemo/static/js/3.853510aa.chunk.js",
-    "static/js/3.853510aa.chunk.js.map": "/employeesDemo/static/js/3.853510aa.chunk.js.map",
-    "index.html": "/employeesDemo/index.html",
-    "static/css/main.63492ae4.chunk.css.map": "/employeesDemo/static/css/main.63492ae4.chunk.css.map",
-    "static/js/2.93525698.chunk.js.LICENSE.txt": "/employeesDemo/static/js/2.93525698.chunk.js.LICENSE.txt",
-    "static/media/EmployeeList.module.css": "/employeesDemo/static/media/personIcon.f058aafc.svg"
+    "main.css": "/employeesRemote/static/css/main.3ecae057.chunk.css",
+    "main.js": "/employeesRemote/static/js/main.1eaf03bb.chunk.js",
+    "main.js.map": "/employeesRemote/static/js/main.1eaf03bb.chunk.js.map",
+    "runtime-main.js": "/employeesRemote/static/js/runtime-main.544b0233.js",
+    "runtime-main.js.map": "/employeesRemote/static/js/runtime-main.544b0233.js.map",
+    "static/js/2.d9b93258.chunk.js": "/employeesRemote/static/js/2.d9b93258.chunk.js",
+    "static/js/2.d9b93258.chunk.js.map": "/employeesRemote/static/js/2.d9b93258.chunk.js.map",
+    "static/js/3.853510aa.chunk.js": "/employeesRemote/static/js/3.853510aa.chunk.js",
+    "static/js/3.853510aa.chunk.js.map": "/employeesRemote/static/js/3.853510aa.chunk.js.map",
+    "index.html": "/employeesRemote/index.html",
+    "static/css/main.3ecae057.chunk.css.map": "/employeesRemote/static/css/main.3ecae057.chunk.css.map",
+    "static/js/2.d9b93258.chunk.js.LICENSE.txt": "/employeesRemote/static/js/2.d9b93258.chunk.js.LICENSE.txt",
+    "static/media/EmployeeList.module.css": "/employeesRemote/static/media/personIcon.f058aafc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc493fbb.js",
-    "static/js/2.93525698.chunk.js",
-    "static/css/main.63492ae4.chunk.css",
-    "static/js/main.b644e8dd.chunk.js"
+    "static/js/runtime-main.544b0233.js",
+    "static/js/2.d9b93258.chunk.js",
+    "static/css/main.3ecae057.chunk.css",
+    "static/js/main.1eaf03bb.chunk.js"
   ]
 }
