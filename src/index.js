@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -13,9 +13,9 @@ const store = createStore(reducers);
 
 const app = (
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 
