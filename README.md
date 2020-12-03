@@ -4,10 +4,22 @@
 
 ### Run App:
 
-- You can run it locally
+- First install the dependencies:
+
+```
+npm install
+```
+
+- Run the app in a local server (localhost):
 
 ```
 npm run start
+```
+
+- Open the browser and go to:
+
+```
+http://localhost:3000
 ```
 
 ### Run Unit Tests and check coverage:
@@ -26,7 +38,7 @@ npm run test -- --coverage --watchAll
 
 ### Styles:
 
-- I used Css Modules which comes incorporated with react v17
+- I used Css Modules which come incorporated with react v17
 - I used css variables to set the theme according to the wireframes.
 - I created 1 common style to reuse styles on primary/secondary btns.
 
