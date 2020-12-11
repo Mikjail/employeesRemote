@@ -1,11 +1,37 @@
+table {
+  border-spacing: 0px 10px;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+th:first-child {
+  padding-left: 26px;
+}
+
 .row {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   background: #ffffff;
   box-shadow: 6px 6px 54px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  padding: 32px 26px;
   margin-top: 10px;
+}
+
+.column {
+  padding: 32px 0;
+}
+
+.column:first-child {
+  padding-left: 26px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  padding-right: 26px;
+  height: 100%;
+  padding-top: 32px;
 }
 
 .mobileTitle {
@@ -43,10 +69,9 @@
   color: var(--font-light);
 }
 
-.action {
+.action a {
   display: flex;
-  justify-content: flex-end;
-  height: 43px;
+  justify-content: center;
 }
 
 .country,
