@@ -5,9 +5,9 @@ import ListItem from './ListItem/ListItem';
 const list = (props) => {
   const getThead = () => ['EMPLOYEE', 'JOB TITLE', 'COUNTRY', 'SALARY']
     .map((thead) => (
-      <div key={thead} className={style.thead}>
+      <th key={thead} className={style.thead}>
         {thead}
-      </div>
+      </th>
     ));
 
   const getItems = () => {
@@ -19,12 +19,16 @@ const list = (props) => {
   };
   return (
     <div className={style.list} data-testid="list">
-      <div className={style.header} data-testid="thead">
-        {getThead()}
-      </div>
-      <div className={style.body} data-testid="tbody">
-        {getItems()}
-      </div>
+      <table>
+        <thead data-testid="thead">
+          <tr>
+            {getThead()}
+          </tr>
+        </thead>
+        <tbody>
+          {getItems()}
+        </tbody>
+      </table>
     </div>
   );
 };

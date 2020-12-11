@@ -4,8 +4,8 @@ import style from './ListItem.module.css';
 import commonStyle from '../../../styles/common.module.css';
 
 const listItem = ({ item }) => (
-  <div className={style.row}>
-    <div className={style.column}>
+  <tr className={style.row}>
+    <td className={style.column}>
       <div className={style.mobileTitle}>
         Name
       </div>
@@ -17,24 +17,24 @@ const listItem = ({ item }) => (
           {item.dateOfBirth}
         </span>
       </div>
-    </div>
-    <div className={style.column}>
+    </td>
+    <td className={style.column}>
       <div className={style.mobileTitle}>
         Job Title
       </div>
       <div className={style.jobTitle} data-testid="jobTitle">
         {item.jobTitle}
       </div>
-    </div>
-    <div className={style.column}>
+    </td>
+    <td className={style.column}>
       <div className={style.mobileTitle}>
         Country
       </div>
       <div className={style.country} data-testid="country">
         {item.country}
       </div>
-    </div>
-    <div className={style.column}>
+    </td>
+    <td className={style.column}>
       <div className={style.mobileTitle}>
         Salary
       </div>
@@ -43,15 +43,15 @@ const listItem = ({ item }) => (
         <span>USD</span>
         <small>per year</small>
       </div>
-    </div>
-    <div className={style.action} data-testid="action">
+    </td>
+    <td className={style.action} data-testid="action">
       <Link
         to={`/edit/${item.id}`}
         className={[commonStyle.secondaryBtn, style.editBtn].join(' ')}
       >
         Edit
       </Link>
-    </div>
-  </div>
+    </td>
+  </tr>
 );
 export default listItem;
