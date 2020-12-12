@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 import * as actions from '../../store/actions';
 import Input from '../../components/UI/Input/Input';
 import Headline from '../../components/Headline/Headline';
@@ -10,6 +11,7 @@ import NoContent from '../../components/NoContent/NoContent';
 import Aux from '../../hoc/Aux/aux';
 import { formObject } from './formObject';
 import { checkValidity, updateObject, setInputValue } from '../../utils/utils';
+import commonStyle from '../../styles/common.module.css';
 
 const employeeCreate = (props) => {
   const {
@@ -40,9 +42,9 @@ const employeeCreate = (props) => {
 
   useEffect(() => {
     const updatedForm = {};
-    if (params && params.id && employees.length > 0 && !employee) {
+    if (params?.id && employees?.length > 0 && !employee) {
       const employeeToSet = employees.find((empl) => empl.id.toString() === params.id.toString());
-      if (employeeToSet && employeeToSet.id) {
+      if (employeeToSet?.id) {
         Object.keys(employeeForm).forEach((key) => {
           const inputValue = employeeToSet[key] || employeeForm[key].value;
           const updatedFormElement = updateObject(employeeForm[key], {
@@ -151,13 +153,6 @@ const employeeCreate = (props) => {
   };
 
   /**
-   * Canclel On Click btn handler
-   */
-  const onCancel = () => {
-    props.history.push('/');
-  };
-
-  /**
    * This returns the form generated from the @formObject
    */
   const formContent = () => (
@@ -179,11 +174,15 @@ const employeeCreate = (props) => {
         </div>
       ))}
       <div className={style.formFooter}>
-        <Button classType="secondaryBtn" clicked={onCancel}>
+        <Link
+          to="/"
+          className={[commonStyle.secondaryBtn, style.cancelBtn].join(' ')}
+        >
+
           <span data-testid="cancel-btn">
             Cancel
           </span>
-        </Button>
+        </Link>
 
         <Button classType="primaryBtn" btnType="submit">
           <span data-testid="save-btn">
