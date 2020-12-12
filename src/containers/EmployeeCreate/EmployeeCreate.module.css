@@ -28,6 +28,13 @@
   margin-bottom: 30px;
 }
 
+.cancelBtn {
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  min-width: 50px;
+}
+
 /**
   View from max-width 800px 
 **/

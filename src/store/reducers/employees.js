@@ -6,7 +6,7 @@ export const initialState = [
     name: 'Kermie Hills',
     jobTitle: 'Manager',
     dateOfBirth: '4/9/1999',
-    country: 'Philippines',
+    country: 'Argentina',
     salary: 1648.51
   },
   {
@@ -14,7 +14,7 @@ export const initialState = [
     name: 'Ealasaid Doe',
     jobTitle: 'QA',
     dateOfBirth: '1/30/1973',
-    country: 'Sweden',
+    country: 'Ukraine',
     salary: 875.32
   },
   {
@@ -22,7 +22,7 @@ export const initialState = [
     name: 'Chrystel Kornel',
     jobTitle: 'Software Engineer',
     dateOfBirth: '1/27/1979',
-    country: 'Indonesia',
+    country: 'Venezuela',
     salary: 1424.75
   }
 ];
