@@ -28,7 +28,10 @@ const employeeCreate = (props) => {
 
   const [employee, setEmployee] = useState(undefined);
 
-  const formElementsArray = [];
+  const formElementsArray = Object.keys(employeeForm).map((key) => ({
+    id: key,
+    config: employeeForm[key]
+  }));
 
   const title = params && params.id ? 'Edit employee' : 'Add a new employee';
 
@@ -65,13 +68,6 @@ const employeeCreate = (props) => {
       }
     }
   }, [employees]);
-
-  Object.keys(employeeForm).forEach((key) => {
-    formElementsArray.push({
-      id: key,
-      config: employeeForm[key]
-    });
-  });
 
   /**
    * This will update the element
